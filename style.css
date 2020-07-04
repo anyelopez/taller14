@@ -1,0 +1,147 @@
+
+.grid-container {
+  display: grid;
+  align: center;
+  grid-template-columns: 300px 300px 300px 300px 300px 300px;
+  grid-template-rows: 120px 120px 120px 120px 120px 120px;
+  gap: 1fr 1fr;
+  grid-template-areas: "Header Header Header Header Header Header" 
+                        ". . . . . ." 
+                        ". Contenido Contenido Contenido Contenido ." 
+                        ". Contenido Contenido Contenido Contenido ." 
+                        ". Contenido Contenido Contenido Contenido ." 
+                        ". . . . . social" 
+                        "footer footer footer footer footer footer";
+}
+
+.Header 
+{ 
+grid-area: Header;
+text-align: right;
+display:inline-block;
+cursor:pointer;
+
+}
+ 
+ .content 
+ { 
+ grid-area:Contenido;
+ }
+
+.flex-container
+{
+display: grid;
+grid-area: Contenido;
+align-self:auto;
+justify-content: center;
+align-items: center;
+height: 20px;
+flex-wrap: wrap;
+margin: 15px;
+	
+}
+
+.Busqu, .Busque
+{
+flex: content;
+direction: rtl;
+flex-direction: row-reverse;
+justify-content: flex-end;
+
+} 
+.social
+ {
+    grid-area: social;
+   
+ }
+.Button {
+  
+	background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	border-radius: 4px;
+	color: #5F6368;
+	font-family: arial,sans-serif;
+	font-size: 14px;
+	margin: 11px 4px;
+	padding: 13px 26px;
+	line-height: 27px;
+	height: 36px;
+	min-width: 54px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+
+}
+
+.Buscador
+{
+	flex: content;
+    border-radius:20px;
+    height: 40px;
+	width: 7cm;
+	padding: 0px 35px;
+	margin: 5px;
+}
+
+.myButton1 {
+    position: fixed;
+    box-shadow:inset 0px 1px 0px 0px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #a3e67e 100%);
+	background-color:#44c767;
+	border-radius:10px;
+	border:3px solid #93c497;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font: oblique bold 120% cursive;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 27px;
+	text-decoration:none;
+    text-shadow:-1px 3px 32px #2f6627;
+    box-align: right;
+ 
+}
+
+.flex-container2
+{
+grid-area: footer;
+justify-content: centerleft;
+align-items: left;
+height: 20px;
+flex-wrap: wrap;
+margin: 15px;
+	
+}
+.footer 
+{ 
+grid-area: footer;
+background-color: rgb(244, 245, 248);
+    
+ }
+ .h1
+{
+grid-area: footer;
+text-align: right;
+cursor:pointer;
+font-size: 6px;
+ }
+ .fot
+ {
+grid-area: footer;
+text-align: left; 
+cursor:pointer; 
+font-size:18px;
+
+ }
+ 
+ .menu
+ {
+ grid-area: footer;
+ text-align: right;
+ cursor:pointer;
+ font-size:15px; 
+ }
+
+
